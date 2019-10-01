@@ -12,7 +12,7 @@
 ## `反引號`
 
  `1+1=2`
- ``
+ ```
 #include<iostream>
 using namespace std;
 
@@ -36,7 +36,7 @@ int main()
 }
 
 
-``
+```
 
 
 | 表格      | 第一列     | 第二列     |
