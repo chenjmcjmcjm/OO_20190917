@@ -1,0 +1,42 @@
+/* package whatever; // don't place package name! */
+ 
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+ 
+/* Name of the class has to be "Main" only if the class is public. */
+abstract class CShape
+	{
+		protected String color;
+		public void setColor(String str)
+		{
+			color=str;
+		}
+		public abstract void show();
+	}
+	class CTriangle extends CShape
+	{
+		protected double a,b,c;
+		public CTriangle(double a,double b,double c)
+		{
+			this.a=a;
+			this.b=b;
+			c=c;
+		}
+		public void show()
+		{
+			System.out.print("color="+color+", ");
+			System.out.println("area="+a*b*0.5);
+		}
+		}
+        
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		CTriangle triangle = new CTriangle(3,4,5);
+		triangle.setColor("red");
+		triangle.show();
+	}
+	
+}
